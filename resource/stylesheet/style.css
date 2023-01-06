@@ -1,4 +1,35 @@
-.header {
-    
-    border: 1px black solid;
+@font-face {
+    font-family: 'SmileySans';
+    src: url(../../library/font/SmileySans/SmileySans-Oblique.ttf);
+    src: url(../../library/font/SmileySans/SmileySans-Oblique.otf);
+    src: url(../../library/font/SmileySans/SmileySans-Oblique.otf.woff2);
+    src: url(../../library/font/SmileySans/SmileySans-Oblique.ttf.woff2);
+}
+
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url(../../library/font/JetBrainsMono/JetBrainsMono-Medium.ttf);
+    src: url(../../library/font/JetBrainsMono/JetBrainsMono-Medium.woff2);
+}
+
+@font-face {
+    font-family: 'MiSans';
+    src: url(../../library/font/MiSans/MiSans-Normal.ttf);
+}
+
+* {
+    font-family: MiSans;
+    /* font-family: JetBrainsMono; */
+    /* background-color: #eee; */
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 10px 10px 25px 20px rgba(0, 0, 0, 5%);
+    margin: 50px;
+}
+
+.article {
+
 }

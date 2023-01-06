@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'SmileySans';
+    src: url(../../library/font/SmileySans/SmileySans-Oblique.ttf);
+    src: url(../../library/font/SmileySans/SmileySans-Oblique.otf);
+    src: url(../../library/font/SmileySans/SmileySans-Oblique.otf.woff2);
+    src: url(../../library/font/SmileySans/SmileySans-Oblique.ttf.woff2);
+}
+
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url(../../library/font/JetBrainsMono/JetBrainsMono-Medium.ttf);
+    src: url(../../library/font/JetBrainsMono/JetBrainsMono-Medium.woff2);
+}
+
+@font-face {
+    font-family: 'MiSans';
+    src: url(../../library/font/MiSans/MiSans-Normal.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #eee;
+}
+
+/* 头部Header */
+.header {
+    height: 360px;
+    width: 100%;
+    background-color: #3F51B5;
+}
+
+/* 标题 */
+.title {
+    /* 字体 */
+    color: #fff;
+    font-size: 82px;
+    font-family: SmileySans;
+
+    width: 418px;
+    height: 99px;
+
+}
+
+
+
+/* 主体 */
+.main-container {
+    display: flex;
+    width: auto;
+    height: auto;
+
+    /* position: relative; */
+    /* top: 13px; */
+    
+
+}
+
+/* 左边 */
+.left {
+    width: 256px;
+    height: min-content;
+}
+
+/* 右边 */
+.right>.container {
+    width: 256px;
+    height: 512px;
+}
+
+.right-header {
+    width: 256px;
+    height: 215px;
+    background-color: #3F51B5;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 10px 10px 25px 20px rgba(0, 0, 0, 5%);
+}
+
+.headshot {
+    box-shadow: 10px 10px 25px 20px rgba(0, 0, 0, 5%);
+    width: 94px;
+    height: 94px;
+    border-radius: 47px;
+    border: 1px black solid;
+    background-image: url("../images/Headshot.png");
+    background-size: contain;
+
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+}
+
+.nickname {
+    font-family: SmileySans;
+    color: #fff;
+    font-size: 32px;
+
+    width: 129px;
+    height: 39px;
+
+    position: relative;
+    top: 63px;
+    margin: 0 auto;
+}
+
+.links-title {
+    /* 字体 */
+    color: #757575;
+    font-family: MiSans;
+    font-weight: light;
+    font-size: 12px;
+    /* 宽高 */
+    width: 81px;
+    height: 16px;
+    /* 定位 */
+    position: relative;
+    top: 13px;
+    margin: 0 auto;
+}
+
+.links-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0px;
+    
+    position: relative;
+    top: 68px;
+    
+}
+
+.link-element {
+    /* 清除列表样式 */
+    list-style: none;
+    /* 字体 */
+
+    
+    margin: 0px;
+    margin-bottom: 16px;
+
+
+    text-decoration: none; /* 去除默认的下划线 */
+	outline: none;	/* 去除旧版浏览器的点击后的外虚线框 */
+	color: #000;	/* 去除默认的颜色和点击后变化的颜色 */ 
+    
+}
+
+.link-element > a {
+    /* 清除默认样式 */
+    text-decoration: none; /* 去除默认的下划线 */
+	outline: none;	/* 去除旧版浏览器的点击后的外虚线框 */
+	color: #000;	/* 去除默认的颜色和点击后变化的颜色 */
+
+    /* 字体 */
+    color: #212121;
+    font-size: 14px;
+    font-family: JetBrainsMono;
+}
+
+/* 中间 */
+.mid {
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 2000px;
+}

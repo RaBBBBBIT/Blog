@@ -1,0 +1,448 @@
+@font-face {
+    font-family: 'SmileySans';
+    src: url(../../library/font/SmileySans/SmileySans-Oblique.ttf);
+    src: url(../../library/font/SmileySans/SmileySans-Oblique.otf);
+    src: url(../../library/font/SmileySans/SmileySans-Oblique.otf.woff2);
+    src: url(../../library/font/SmileySans/SmileySans-Oblique.ttf.woff2);
+}
+
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url(../../library/font/JetBrainsMono/JetBrainsMono-Medium.ttf);
+    src: url(../../library/font/JetBrainsMono/JetBrainsMono-Medium.woff2);
+}
+
+@font-face {
+    font-family: 'MiSans';
+    src: url(../../library/font/MiSans/MiSans-Normal.ttf);
+}
+
+
+@media screen and (max-width: 3840px) {
+
+    /* 全局设置 */
+    * {
+        /* 全局字体 */
+        font-family: MiSans;
+        font-family: JetBrainsMono;
+        font-size: 14px;
+        color: #555;
+        /* 全局margin */
+        margin: 0px;
+    }
+
+    body {
+        /* 全局背景色 */
+        background-color: #eee;
+    }
+
+    /* 头部 */
+    .header {
+        /* 背景 */
+        background-color: #3F51B5;
+        height: 33vh;
+    }
+
+    /* 标题 */
+    .header .title {
+        /* 居中 */
+        display: flex;
+        justify-content: space-around;
+
+        /* 字体 */
+        font-family: SmileySans;
+        font-size: 82px;
+        color: #fff;
+    }
+
+
+    /* 主体 mian-container */
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* 主体 全局设置 */
+    .main-container>div {
+        background-color: #fff;
+        border-radius: 3px;
+    }
+
+    /* 主体 左中右 */
+    /* 左 */
+    .left {
+        min-width: 256px;
+        margin: 50px;
+        margin-right: 0;
+
+    }
+
+    /* 中 */
+    .mid {
+        margin: 50px;
+        padding: 20px;
+        min-width: 512px;
+        max-width: 1280px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* 文章设置 */
+    .article {
+        /* border: 1px black solid; */
+        min-width: 200px;
+        height: 100px;
+
+        margin-bottom: 50px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+    }
+
+    /* 文章标题 */
+    .article-title {
+        /* 字体 */
+        font-size: 16px;
+        font-weight: bold;
+        font-family: SmileySans;
+        color: #303133;
+        text-decoration: none;
+    }
+
+    /* 标题分隔线 */
+    .article-title-description {
+        margin-left: 20px;
+        margin-right: 20px;
+        border-bottom: 1px black dashed;
+    }
+
+    /* 文章简介 */
+    .article-description {
+        margin-left: 20px;
+        margin-right: 20px;
+        /* 字体 */
+        font-size: 13px;
+        color: #606266;
+    }
+
+    /* 文章分隔线 */
+    .article-dividing-line {
+        border: 1px black solid;
+    }
+
+    /* 右 */
+    .right {
+        border-right: 1px black solid;
+        border-bottom: 1px black solid;
+        min-width: 256px;
+        margin: 50px;
+        margin-left: 0px;
+
+    }
+
+    /* 底部 */
+    .footer {
+        /* 居中 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border: 1px black solid;
+        height: 150px;
+        background-color: #333;
+
+        font-family: MiSans;
+        color: #666;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+
+    /* 全局设置 */
+    * {
+        /* 全局字体 */
+        font-family: MiSans;
+        font-family: JetBrainsMono;
+        font-size: 14px;
+        color: #555;
+        /* 全局margin */
+        margin: 0px;
+    }
+
+    body {
+        /* 全局背景色 */
+        background-color: #eee;
+    }
+
+    /* 头部 */
+    .header {
+        /* 背景 */
+        background-color: #3F51B5;
+        height: 33vh;
+    }
+
+    /* 标题 */
+    .header .title {
+        /* 居中 */
+        display: flex;
+        justify-content: space-around;
+
+        /* 字体 */
+        font-family: SmileySans;
+        font-size: 82px;
+        color: #fff;
+    }
+
+
+    /* 主体 mian-container */
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* flex-wrap: wrap-reverse; */
+    }
+
+    /* 主体 全局设置 */
+    .main-container>div {
+        background-color: #fff;
+        border-radius: 3px;
+    }
+
+    /* 主体 左中右 */
+    /* 左 */
+    .left {
+        border-right: 1px black solid;
+        border-bottom: 1px black solid;
+        min-width: 256px;
+        margin: 50px;
+        margin-right: 0;
+
+        display: none;
+
+    }
+
+    /* 中 */
+    .mid {
+        border-right: 1px black solid;
+        border-bottom: 1px black solid;
+        margin: 50px;
+        padding: 20px;
+        min-width: 512px;
+        max-width: 1280px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* 文章设置 */
+    .article {
+        /* border: 1px black solid; */
+        min-width: 200px;
+        height: 100px;
+
+        margin-bottom: 50px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+    }
+
+    /* 文章标题 */
+    .article-title {
+        /* 字体 */
+        font-size: 16px;
+        font-weight: bold;
+        font-family: SmileySans;
+        color: #303133;
+        text-decoration: none;
+    }
+
+    /* 标题分隔线 */
+    .article-title-description {
+        margin-left: 20px;
+        margin-right: 20px;
+        border-bottom: 1px black dashed;
+    }
+
+    /* 文章简介 */
+    .article-description {
+        margin-left: 20px;
+        margin-right: 20px;
+        /* 字体 */
+        font-size: 13px;
+        color: #606266;
+    }
+
+    /* 文章分隔线 */
+    .article-dividing-line {
+        border: 1px black solid;
+    }
+
+    /* 右 */
+    .right {
+        border-right: 1px black solid;
+        border-bottom: 1px black solid;
+        min-width: 256px;
+        margin: 50px;
+        margin-left: 0px;
+
+    }
+
+    /* 底部 */
+    .footer {
+        /* 居中 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border: 1px black solid;
+        height: 150px;
+        background-color: #333;
+
+        font-family: MiSans;
+        color: #666;
+    }
+}
+
+
+@media screen and (max-width: 918px) {
+
+    /* 全局设置 */
+    * {
+        /* 全局字体 */
+        font-family: MiSans;
+        font-family: JetBrainsMono;
+        font-size: 14px;
+        color: #555;
+        /* 全局margin */
+        margin: 0px;
+    }
+
+    body {
+        /* 全局背景色 */
+        background-color: #eee;
+    }
+
+    /* 头部 */
+    .header {
+        /* 背景 */
+        background-color: #3F51B5;
+        height: 33vh;
+    }
+
+    /* 标题 */
+    .header .title {
+        /* 居中 */
+        display: flex;
+        justify-content: space-around;
+
+        /* 字体 */
+        font-family: SmileySans;
+        font-size: 82px;
+        color: #fff;
+    }
+
+
+    /* 主体 mian-container */
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* flex-wrap: wrap-reverse; */
+    }
+
+    /* 主体 全局设置 */
+    .main-container>div {
+        background-color: #fff;
+        border-radius: 3px;
+    }
+
+    /* 主体 左中右 */
+    /* 隐藏左右两边 */
+    .left {display: none;}
+    .right {display: none;}
+
+    /* 中 */
+    .mid {
+        border-right: 1px black solid;
+        border-bottom: 1px black solid;
+        margin: 50px;
+        padding: 20px;
+        min-width: 512px;
+        max-width: 1280px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* 文章设置 */
+    .article {
+        min-width: 200px;
+        height: 100px;
+
+        margin-bottom: 50px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+    }
+
+    /* 文章标题 */
+    .article-title {
+        /* 字体 */
+        font-size: 16px;
+        font-weight: bold;
+        font-family: MiSans;
+        color: #303133;
+        text-decoration: none;
+    }
+
+    /* 标题分隔线 */
+    .article-title-description {
+        margin-left: 20px;
+        margin-right: 20px;
+        border-bottom: 1px black dashed;
+    }
+
+    /* 文章简介 */
+    .article-description {
+        margin-left: 20px;
+        margin-right: 20px;
+        /* 字体 */
+        font-size: 13px;
+        color: #606266;
+    }
+
+    /* 文章分隔线 */
+    .article-dividing-line {
+        border: 1px black solid;
+    }
+
+
+
+    /* 底部 */
+    .footer {
+        /* 居中 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 150px;
+        background-color: #333;
+
+        font-family: MiSans;
+        color: #666;
+    }
+}
